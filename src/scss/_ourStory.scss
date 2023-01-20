@@ -8,6 +8,9 @@
     height: 400px;
     margin: 0 auto;
     object-fit: cover;
+    z-index: 10;
+    position: relative;
+    top: 30px;
   }
   h2 {
     font-size: 40pt;
