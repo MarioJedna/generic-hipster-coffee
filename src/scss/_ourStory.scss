@@ -1,0 +1,73 @@
+.ourstory {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 70%;
+    height: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  h2 {
+    font-size: 40pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.owners_title {
+  font-family: $font-family;
+  font-size: 36pt;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.bio {
+  font-family: $font-family;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 70vw;
+
+  h2 {
+    font-size: 40pt;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  p {
+    line-height: 2;
+    margin-bottom: 50px;
+  }
+}
+
+.owners {
+  font-family: $font-family;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  &__owner {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    svg,
+    h3,
+    h4 {
+      margin: 10px;
+    }
+    @media screen and (max-width: 1000px) {
+      flex: 51%;
+    }
+  }
+}
