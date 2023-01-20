@@ -1,1 +1,105 @@
 /** @format */
+$font_robo: "Roboto+Condensed", sans-serif;
+
+header {
+  height: 100px;
+  background-color: gray;
+  width: max-content;
+}
+
+.coffee {
+margin: 0 auto;
+width: 80%;
+}
+
+.coffee_description {
+    padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  font-family: $font_robo;
+  font-weight: 300;
+  
+
+  h1 {
+    font-weight: 300;
+  }
+
+  p {
+    font-weight: 300;
+  }
+  h6 {
+    font-weight: 300;
+    padding-top: 1%;
+  }
+}
+a {
+    color: $footer-links;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  
+
+  // @media screen and (max-width: 768px) {
+  //     width: 52%;
+  //     flex-direction: column;
+  //     justify-content: center;
+  //     align-items: center;
+  // }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width:48%;
+    height: auto;
+    margin: 1%;
+    padding: 2%;
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &_header {
+      font-family: $font_robo;
+      border-bottom: 1px solid $footer-hipster;
+      font-weight: 300;
+      background-color: $header-card-background;
+      justify-content: center;
+      padding: 3%;
+      height: 40px;
+      width: 100%;
+    }
+
+    &_description {
+      font-family: $font_robo;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 10px;
+      padding: 10px;
+      background-color: $card-footer-backgrund;
+      width: 100%;
+    }
+
+    &_footer {
+      font-family: $font_robo;
+      font-weight: 300;
+      padding: 12px;
+      font-size: 11px;
+      width: 100%;
+      background-color: $card-footer-backgrund;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
