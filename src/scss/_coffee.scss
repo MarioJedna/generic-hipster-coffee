@@ -1,11 +1,7 @@
 /** @format */
-$font_robo: "Roboto+Condensed", sans-serif;
+$font_robo: "Roboto Condensed";
 
-header {
-  height: 100px;
-  background-color: gray;
-  width: max-content;
-}
+
 
 .coffee {
 margin: 0 auto;
@@ -22,14 +18,17 @@ width: 80%;
 
   h1 {
     font-weight: 300;
+    font-family: $font_robo;
   }
 
   p {
     font-weight: 300;
+    font-family: $font_robo;
   }
   h6 {
     font-weight: 300;
     padding-top: 1%;
+    font-family: $font_robo;
   }
 }
 a {
