@@ -1,18 +1,80 @@
-.menu__block {
+menu {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  &_item {
+  font-family: $font-family;
+  width: 100vw;
+  padding-left: 20px;
+  .menu {
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    .menu__item {
-        width: 200px;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    h2 {
+      font-size: 40pt;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
-    .menu__price {
-        width: 30px;
+    h3 {
+      font-size: 32pt;
+      font-weight: 300;
+      text-transform: uppercase;
+      margin-top: 1em;
+      margin-bottom: 1em;
     }
+  }
+}
+
+.menu__blocks_row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  &_column {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .menu__block {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: $font-family;
+    &_item {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1em;
+      .menu__item {
+        width: 500px;
+        // min-width: 200px;
+        font-size: 16pt;
+        flex-grow: 3;
+        @media screen and (max-width: 1200px) {
+            width:300px ;
+          }
+      }
+      .menu__price {
+        width: 80px;
+        // min-width: 30px;
+        font-size: 16pt;
+        flex-grow: 1;
+        @media screen and (max-width: 1200px) {
+            width: 40px;
+          }
+      }
+    }
+    @media screen and (max-width: 1200px) {
+      flex-flow: column nowrap;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    flex-flow: column nowrap;
   }
 }
