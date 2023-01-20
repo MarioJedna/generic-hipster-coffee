@@ -1,0 +1,39 @@
+/** @format */
+
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-color: $nav-background;
+	height: 20vh;
+	// MEDIA FOR 768px
+	@media screen and (max-width: 768px) {
+		flex-direction: column;
+	}
+	&__bar {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+		list-style-type: none;
+		text-decoration: none;
+		// MEDIA FOR 768px
+		@media screen and (max-width: 768px) {
+			margin-bottom: 10px;
+		}
+		&_links {
+			margin: 0 10px;
+			a {
+				font-size: 1rem;
+				font-family: "Roboto Condensed", sans-serif;
+				color: $nav-links;
+				text-decoration: none;
+				&:hover {
+					color: $footer-background;
+					font-weight: 600;
+				}
+			}
+		}
+	}
+}
